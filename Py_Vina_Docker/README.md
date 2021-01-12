@@ -1,18 +1,11 @@
 Hello ! This is a script developed by Avik Das, M.Pharm, BITS Pilani
 
-This code prepares a ligand for docking from a hand sketched 2D SDF file.
+This code performs virtual screening of N number of ligands using AutoDock Vina.
 
 NECESSARY REQUIREMENTS
-	1) Keep all your ligands in sdf format in the directory where the script is present.
-	2) Open babel 2.4.0 or higher must be installed in your system
-	3) It works only on LINUX based system or Cygwin enabled OS platform
+	1) Keep all your ligands in pdbqt format in the directory where the script is present.
+	2) Keep the receptor file in pdbqt format andf the configuration file in the directory where the script is present.
+	3) AutoDock Vina must be installed in your system.
+	4) Coniguration file must be written in the format given in a sample text file.
+	3) It works only on LINUX based system or Cygwin enabled OS platform.
 
-On running the script 
-	1) It generates the 3D structure of the ligand
-	2) Generates conformer search using the MMFF94 forcefield and returns the lowest energy conformer
-	3) Energy minimization of the ligand is performed using MMFF94 forcefield
-	4) Conversion of sdf files to pdbqt files and adding Gasteiger partialcharges simultaneously
-	5) Creating two directories for the segregation of sdf file and pdbqt file
-	6) The raw sdf files and prepared pdbqt ligands are kept in directories "Raw_Ligands_sdf" and "Prepared_Ligands_pdbqt" respectively.
-	
-A set of test files .sdf has been added in the directory for perusal.
