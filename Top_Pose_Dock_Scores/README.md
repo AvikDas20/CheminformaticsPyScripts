@@ -1,18 +1,20 @@
 Hello ! This is a script developed by Avik Das, M.Pharm, BITS Pilani
 
-This code prepares a ligand for docking from a hand sketched 2D SDF file.
+This code prepares an output file containing the list of ligands and their scores of the best pose from and output file in pdbqt format.
 
 NECESSARY REQUIREMENTS
-	1) Keep all your ligands in sdf format in the directory where the script is present.
-	2) Open babel 2.4.0 or higher must be installed in your system
-	3) It works only on LINUX based system or Cygwin enabled OS platform
-
-On running the script 
-	1) It generates the 3D structure of the ligand
-	2) Generates conformer search using the MMFF94 forcefield and returns the lowest energy conformer
-	3) Energy minimization of the ligand is performed using MMFF94 forcefield
-	4) Conversion of sdf files to pdbqt files and adding Gasteiger partialcharges simultaneously
-	5) Creating two directories for the segregation of sdf file and pdbqt file
-	6) The raw sdf files and prepared pdbqt ligands are kept in directories "Raw_Ligands_sdf" and "Prepared_Ligands_pdbqt" respectively.
+	1) Keep all your output files in PDBQT format in the directory where the script is present.
+	2) It prompts the user for the root directory of the files
+	3) It works only on LINUX based system or Cygwin enabled OS platform. 
 	
-A set of test files .sdf has been added in the directory for perusal.
+On running the script 
+	1) It reads individual output pdbqt files.
+	2) Extracts the MODEL no. from the output.
+	3) Extracts the coorresponding Vina score for that particular model and particular ligand.
+	4) Generates a text file with the list of files and the Vina Score
+	
+FUTURE MODIFICATIONS PLANNED:
+	1) RMSD scores to be included.
+	2) Scores to be shown in ascending order. 
+	
+
