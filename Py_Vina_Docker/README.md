@@ -9,3 +9,5 @@ NECESSARY REQUIREMENTS
 	4) Coniguration file must be written in the format given in a sample text file.
 	3) It works only on LINUX based system or Cygwin enabled OS platform.
 
+It prompts the user for the receptor file ("Enter the name of the receptor file without the extension ")
+Stores all the individual output files in a separate directory. 
