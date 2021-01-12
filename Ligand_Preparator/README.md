@@ -1,3 +1,5 @@
+Hello ! This is a script developed by Avik Das, M.Pharm, BITS Pilani
+
 This code prepares a ligand for docking from a hand sketched 2D SDF file.
 
 NECESSARY REQUIREMENTS
